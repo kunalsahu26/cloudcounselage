@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Page</title>
+
+    <style>
+        .image {
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <img class="image" src="{% static 'media\logo.jpeg' %}" alt="logo">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'app:home' %}"><i class="fa fa-fw fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app:about' %}">About us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app:scope' %}">Scope</a>
+                        </li>
+                        <!-- Example single danger button -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'app:services' %}">Our Services</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a style="padding-left: 780px;" href="#"><i class="fa fa-fw fa-user"></i></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a style="padding-left: 60px;" href="{% url 'app:register' %}"><i class="fa fa-sign-out "></i></a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <iframe style="margin-left: 100px;margin-top: 12px;" width="420" height="315" src="https://www.youtube.com/embed/GCp8Nl5_1fg?autoplay=1&mute=1"></iframe>
+        <iframe style="margin-left: 200px;margin-top: 12px;" width="420" height="315" src="https://www.youtube.com/embed/7vdAtKY88ZI?autoplay=1&mute=1"></iframe>
+
+
+
+
+        <br> <br> <br>
+        <p style="padding-left: 12px; line-height: 30px;">
+            Cloud Counselage Pvt. Ltd. is an IT & Management Consulting & Services company with a “Social Cause” at heart. We serve startups and MSMEs. Our certified professionals have catered to industries like Technology, FMCG, Fintech, Healthcare, Training, Professional
+            Services, etc.
+            <br> The ‘Social Cause’ is to eradicate perpetual unemployability issue created due to lack of Industry Exposure & Experience, and Job-Readiness amongst the freshers from Tech., Mgmt. and other backgrounds. The delayed influx of these critical
+            human resources from the ‘academia’ into the ‘industry’ causes loss of crucial working hours, in-turn causing a great loss to the Indian economy. We intend to provide 360 degree professional development platform to the students, making them
+            capable to take up IT/ ITes & Mgmt. roles.
+
+        </p>
+    </div>
+<div class="footer ">
+        <footer>
+            <div class="footer-basic ">
+                <div class="social ">
+                    <br>
+                    <a href="https://www.instagram.com/cloudcounselage/ "><i class="icon ion-social-instagram "></i></a>
+                    <a href="https://www.linkedin.com/company/cloud-counselage/ "><i class="fa fa-linkedin " aria-hidden="true "></i></a>
+                    <a href="https://twitter.com/CloudCounselage "><i class="icon ion-social-twitter "></i></a>
+                    <a href="https://www.facebook.com/CloudCounselage/ "><i class="icon ion-social-facebook "></i></a></div>
+                <ul class="list-inline ">
+                    <li class="list-inline-item "><a href="# ">Home</a></li>
+                    <li class="list-inline-item "><a href="{% url 'app:scope' %} ">Services</a></li>
+                    <li class="list-inline-item "><a href="{% url 'app:about' %} ">About</a></li>
+                    <li class="list-inline-item "><a>Privacy Policy</a></li>
+                    <br><br>
+                </ul>
+                <p class="copyright ">Cloud Counselage REGISTERED OFFICE: Cloud Counselage Pvt. Ltd., 91 Springboard, 1 & 2 Floor, Kagalwala House, Behind Metro House,<br> Plot No. 175, CST Road, BKC, Kalina, Mumbai - 400098 <br><br> CORPORATE OFFICE: <br> Cloud Counselage
+                    Pvt. Ltd., 91 Springboard, Godrej & Boyce Industry Estate, Gate No. 2,<br> Plant No. 6, Opp. Vikhroli Bus Depot, Vikhroli - West, Mumbai - 400079<br><br></p>
+            </div>
+    </div>
+    </footer>
+    </div>
+
+</body>
